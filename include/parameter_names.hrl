@@ -1,0 +1,3 @@
+-define(CONNECTOR_NAME, connector_name).
+-define(LISTENER_PORT, listener_port).
+-define(PROVIDER_PORT, provider_port).

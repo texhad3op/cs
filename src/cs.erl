@@ -9,12 +9,9 @@ dict:from_list(L).
 
 start()->
 	Conf = configuration:read_configuration(),
-	io:format("~nStarting connector..."),
-	io:format("~nwith parameters:"),	
+	error_logger:info_msg("Starting connector..."),
+	error_logger:info_msg("with parameters:"),	
 	configuration:print_configuration(Conf),
-	start_server(Conf).
-	
+	server:start(Conf).
 
-
-start_server(Conf)->ok.
 

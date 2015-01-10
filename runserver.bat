@@ -1,0 +1,1 @@
+erl -sname gandalf@localhost -noshell -pa /ebin -s cs start -s init stop
